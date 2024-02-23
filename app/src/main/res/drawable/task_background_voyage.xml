@@ -1,0 +1,3 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#ffc921" /> <!-- Couleur jaune pour le contexte "Voyage" -->
+</shape>

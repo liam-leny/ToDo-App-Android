@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ToDo App</string>
+    <string name="liste_de_tâches">Liste de tâches</string>
+    <string name="ajouter">Ajouter</string>
+    <string-array name="context_options">
+        <item>Travail</item>
+        <item>Personnel</item>
+        <item>Voyage</item>
+    </string-array>
+</resources>

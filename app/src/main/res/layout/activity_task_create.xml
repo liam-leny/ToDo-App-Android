@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_task_create.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".taskCreateActivity">
+
+    <!-- Titre de l'activité -->
+    <TextView
+        android:id="@+id/task_activity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Créer une nouvelle tâche"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Champ de saisie : Titre -->
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titre de la tâche"
+        android:inputType="text" />
+
+    <!-- Champ de saisie : Description -->
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description de la tâche"
+        android:inputType="text" />
+
+    <!-- Champ de saisie : Date de début -->
+    <EditText
+        android:id="@+id/et_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date de début (dd/mm/yyyy)"
+        android:inputType="text" />
+
+    <!-- Champ de saisie : Date de fin -->
+    <EditText
+        android:id="@+id/et_end_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date de fin (dd/mm/yyyy)"
+        android:inputType="text" />
+
+    <!-- Spinner : Contexte -->
+    <Spinner
+        android:id="@+id/spinner_context"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/context_options"
+        android:background="@drawable/spinner_background" />
+
+    <!-- URL -->
+    <EditText
+        android:id="@+id/et_lien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez le lien web (optionnel)" />
+
+
+    <!-- Bouton de sauvegarde -->
+    <Button
+        android:id="@+id/btn_save_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
